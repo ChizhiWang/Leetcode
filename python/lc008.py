@@ -17,6 +17,10 @@ class Solution:
                     return k*ans
             else:
                 if c >= '0' and c <= '9':
+                    if k == 1 and ans > (pow(2,31)-1-(ord(c) - ord('0')))/10:
+                        return pow(2,31)-1
+                    elif k == -1 and ans > (pow(2,31)-(ord(c) - ord('0')))/10:
+                        return -pow(2,31)
                     ans = ans*10 + ord(c) - ord('0')
                 else:
                     return k*ans
