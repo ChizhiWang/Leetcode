@@ -7,4 +7,7 @@
 	* do not forget the initial conditions
 	* top-down or bottom-up
 1. Matrix
-	* 62
+	* 62, 64, 120
+	* right way to create list array: list_three = [[0 for j in range(n)] for i in range(m)]
+	* pay attention to recursion formular
+    * 
